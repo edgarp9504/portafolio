@@ -1,0 +1,155 @@
+
+
+
+
+body {
+    /* background-color: #00003e; Cambia el color de fondo aquí */
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #f0f0f0; /* Agrega un color de fondo para ver el tamaño */
+}
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px 100px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    z-index: 2!important;
+    background-color: #fff;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul li {
+    display: inline;
+    margin-left: 20px; /* Mover el enlace del blog a la derecha */
+}
+
+.navbar-links ul li:first-child {
+    margin-left: 0; /* Quitar el margen izquierdo del primer enlace */
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-social {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-social a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.presenta {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.presenta h1{
+    font-size: 80px;
+}
+
+
+.wrapper span{
+    animation: animate 5s infinite 0s;
+    color: #212F3C;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.wrapper span:nth-child(1){
+    animation-delay: 1s
+}
+
+.wrapper span:nth-child(2){
+    animation-delay: 2s
+}
+
+.wrapper span:nth-child(3){
+    animation-delay: 3s
+}
+.wrapper span:nth-child(4){
+    animation-delay: 4s
+}
+.wrapper span:nth-child(5){
+    animation-delay: 5s
+}
+
+@keyframes animate{
+    0%{opacity: 0}
+    25%{opacity: 0}
+    50%{opacity: 0}
+    75%{opacity: 0}
+    100%{opacity: 1}
+}
+
+
+/* Estilos para el botón de hamburguesa en dispositivos móviles */
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Estilos para hacer el navbar responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .presenta {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    .presenta h1{
+        font-size: 30px;
+    }
+
+    .navbar-social{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
