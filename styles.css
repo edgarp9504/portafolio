@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
-    background-color: #f0f0f0; 
+    /* background-color: #f0f0f0;  */
 }
 
 .navbar {
@@ -144,7 +144,64 @@ body {
 }
 
 
+/********* Seccion de favoritive tool*********************/
 
+.card__main__tool{
+    display: flex;
+}
+
+.tools__experience{
+    padding: 6em var(--border-left);
+}
+
+.tools__experience h3{
+    font-size: 40px;
+    color: black;
+}
+
+  
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scroll 12s linear infinite;
+    width: max-content;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 4)); /* 300px es el ancho de cada elemento y 4 es la cantidad de elementos */
+    }
+  }
+  
+  .scroll-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 100%; /* Ajusta la altura según tus necesidades */
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 200px;
+    margin-right: 10px;
+  }
+  
+  
+
+
+  
+  
+  
+  
+  
+  
 
 /** Mi experiencia **/
 
@@ -190,3 +247,8 @@ body {
 
 
 
+
+  
+  
+  
+  
