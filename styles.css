@@ -16,11 +16,8 @@ body {
     top: 0; 
     width: 100%; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: black;
-    padding: 10px var(--border-left);
-    height: 50px;
+    height: var(--border-left);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     z-index: 2; 
     background-color: #fff;
@@ -114,9 +111,7 @@ body {
   .animated-image {
     position: absolute;
     animation: moveUpDown 2s ease-in-out infinite;
-    /* left: -300px; */
     right: 100px;
-    /* bottom: 0; */
     z-index: -1;
     transform: scaleX(-1);
   }
@@ -159,9 +154,7 @@ body {
     color: #fff;
 }
 
-.container__experience{
-    /* padding-left: var(--border-left)_ */
-}
+
 .experience p{
     color: #fff;
     font-size: 13px;
@@ -264,6 +257,20 @@ body {
     .navbar-social{
         justify-content: center;
         width: 100%;
+    }
+
+    .list_experiencie{
+        flex-direction: column;
+    }
+
+    .animated-image {
+        bottom: 0;
+        left: -40px;
+    }
+
+    .container__img img{
+        width: 50%;
+
     }
 }
 
