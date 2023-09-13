@@ -107,6 +107,31 @@ body {
 }
 
 
+.container {
+    position: relative;
+  }
+  
+  .animated-image {
+    position: absolute;
+    animation: moveUpDown 2s ease-in-out infinite;
+    /* left: -300px; */
+    right: 100px;
+    /* bottom: 0; */
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+      /* transform: scaleX(-1); */
+    }
+    50% {
+      transform: translateY(20px); /* Ajusta la distancia de movimiento vertical */
+    }
+  }
+
+
 /* Estilos para el botón de hamburguesa en dispositivos móviles */
 .navbar-toggler {
     display: none;
